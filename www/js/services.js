@@ -1,8 +1,8 @@
 angular.module('starter.services', [])
 
 .factory('bukuService', function($http) {
-    //var baseUrl = 'http://172.16.96.34/simple-crud-master/crud/index.php/api/';
-	var baseUrl = 'http://goshowadmin.netmedia.co.id/api/';
+    var baseUrl = 'http://172.16.96.34:80/simple-crud-master/crud/index.php/api/';
+	//var baseUrl = 'http://goshowadmin.netmedia.co.id/api/';
     return {
         login: function(sekolahForm){
             return $http.post(baseUrl+'dataSekolah',sekolahForm,{
