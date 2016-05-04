@@ -12,7 +12,7 @@ angular.module('starter.services', [])
             });
         },
         ambilSemua: function (){
-            return $http.get(baseUrl+'ambil'); 
+            return $http.get('http://172.16.96.34/simple-crud-master/crud/index.php/api/ambil'); 
         },
         ambilSatu: function (buku_id){
             return $http.get(baseUrl+'ambilSatu/?id='+buku_id); 
